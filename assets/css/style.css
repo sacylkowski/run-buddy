@@ -190,19 +190,6 @@ section {
     opacity: 0;
 }
 
-.checkbox-wrapper input + label::after,
-.radio-wrapper input + label::after {
-content: none;
-
-}
-
-
-.checkbox-wrapper input:checked + label::after,
-.radio-wrapper input:checked + label::after {
-content: "";
-
-}
-
 .checkbox-wrapper label, .radio-wrapper label {
     position: relative;
     left: 10px;
@@ -247,6 +234,19 @@ content: "";
     left: -26px;
     top: 1px;
     transform: rotate(-58deg);
+}
+
+.checkbox-wrapper input + label::after,
+.radio-wrapper input + label::after {
+content: none;
+
+}
+
+
+.checkbox-wrapper input:checked + label::after,
+.radio-wrapper input:checked + label::after {
+content: "";
+
 }
 
 /* Hero Styles End */
